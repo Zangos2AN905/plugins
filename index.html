@@ -98,7 +98,7 @@
 
         <div class="plugin">
           <p class="plugin-name">gpt</p>
-          <p class="plugin-url" id="plugin-url">plugins/gpt/plugin.json</p>
+          <p class="plugin-url" id="plugin-url">plugins/gpt/index.html</p>
           <div>
             <button id="copy-button" type="button">Copy URL</button>
             <span class="status" id="copy-status" aria-live="polite"></span>
@@ -108,7 +108,7 @@
     </main>
 
     <script>
-      const pluginPath = "plugins/gpt/plugin.json";
+      const pluginPath = "plugins/gpt/index.html";
       const pluginUrl = new URL(pluginPath, window.location.href).href;
 
       document.getElementById("plugin-url").textContent = pluginUrl;
